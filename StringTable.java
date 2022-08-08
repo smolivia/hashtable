@@ -9,7 +9,6 @@ public class StringTable {
     
 
     // Create an empty table with nBuckets buckets
-    @SuppressWarnings("unchecked")
 	public StringTable(int nBuckets)
     {
         //initialize number of buckets and make an array with the given number of buckets
@@ -78,17 +77,6 @@ public class StringTable {
     	}	
     }
     
-
-    /**
-     * toIndex - convert a string's hashcode to a table index
-     *
-     * As part of your hashing computation, you need to convert the
-     * hashcode of a key string (computed using the provided function
-     * stringToHashCode) to a bucket index in the hash table.
-     *
-     * You should use a multiplicative hashing strategy to convert
-     * hashcodes to indices.  
-     */
     private int toIndex(int hashcode)
     {
     	//use multiplicative hashing strategy to convert hashcode to index and try to achieve uniform hashing
